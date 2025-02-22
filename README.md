@@ -10,12 +10,12 @@ https://classroom.google.com/u/1/c/NzU0NDkxMDgyNjky
 ## დავალებების მოსაწვევები
 | დავალება | ქულა | მოსაწვევი | ჩაბარების თარიღი |
 |----------|------|-----------|------------------|
-| 01 - CodeCamp | 6 | [link](https://classroom.github.com/a/eyljOldF) | 26/03/2023       |
-| 02 - Tetris | 10 | [link](https://classroom.github.com/a/MnAwfkQ_) | 10/04/2023       |
-| 03 - Sudoku | 10 | [link](https://classroom.github.com/a/49ZSi5xV) | 30/04/2023       |
-| 04 - Threads | 10 | [link](https://classroom.github.com/a/78pFBXN5) | 14/05/2023       |
-| 05 - Web | 9 | [link](https://classroom.github.com/a/argXo0Re) | 28/05/2023       |
-| Final | 35 |  | 23/06/2023       |
+| 01 - CodeCamp | 6 |  |        |
+| 02 - Tetris | 10 |  |        |
+| 03 - Sudoku | 10 |  |        |
+| 04 - Threads | 10 |  |      |
+| 05 - Web | 9 |  |     |
+| Final | 35 |  |       |
 
 
 ## Git basics
