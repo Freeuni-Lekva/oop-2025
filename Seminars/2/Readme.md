@@ -15,7 +15,7 @@ RomanNumeral(String romanNumber)
 * Constructor. ქმნის რომაულ რიცხვს პარამეტრად გადაცემული სტრიქონიდან.
 * მაგალითად RomanNumeral("xvii") არის 17.
 * @param romanNumeral რომაული რიცხვი სტრიქონულ ფორმატში.
-* @throws IllegalArgumentException თუ გადაცემული სტრიქონი არ შეიცავს სწორ რომაულ რიცხვით ჩანაწერს.
+* @throws IllegalArgumentException თუ გადაცემული სტრიქონი არ შეიცავს სწორ რომაულ რიცხვით ჩანაწერს (regex - "^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$").
 
 \
 String toString()
