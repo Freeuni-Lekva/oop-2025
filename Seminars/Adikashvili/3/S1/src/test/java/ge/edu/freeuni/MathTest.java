@@ -2,12 +2,20 @@ package ge.edu.freeuni;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MathTest {
 
     @Test
     public void testAddSmall() {
+
+        List l = new ArrayList<>();
+        l.add(1);
+        l.add("1");
+
         assertEquals(3, Math.add(1, 2));
     }
 
