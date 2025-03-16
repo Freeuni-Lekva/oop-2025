@@ -8,6 +8,7 @@
 - გადააკეთეთ `Electronic` ინტერფეისი აბსტრაქტულ კლასად.
 
 ## 2. მემკვიდრეობითობა
+
 - აღწერეთ `Parent` მშობელი და `Child` შვილობილი კლასები.
 - აღწერეთ `go` მეთოდი, რომელიც არაფერს აბრუნებს და კონსოლში ბეჭდავს `go method in Parent class`.
 - გადაფარეთ `go` მეთოდი `Child` კლასში, რომელიც დაბეჭდავს `go method in Child class`.
@@ -20,3 +21,11 @@
     - `Parent` კლასის ობიექტი `Child` კლასის ტიპის მითითებით
     - `Child` კლასის ობიექტი `Parent` კლასის ტიპის მითითებით
     - გადაეცით ყველა მითითება `invoke` მეთოდს ცალცალკე და დააკვირდით რა დაიბეჭდება.
+
+## 3. SOLID
+
+- Single Responsibility - Book კლასი
+- Open-closed principle - Calculator კლასი
+- Liskov Substitution principle - Rectangle კლასი
+- Interface Segregation - Worker ინტერფეისი
+- Dependency Inversion - Database ინტერფეისი
