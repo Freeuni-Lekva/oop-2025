@@ -1,11 +1,11 @@
 ## 1. ინტერფეისები, აბსტრაქტული კლასები
 
-- შექმენით `Device` ინტერფეისი `on` და `off` მეთოდებით.
-- შექმენით `Device` ინტერფეისის მემკვიდრე `Electronic` ინტერფეისი `plugin` მეთოდით.
-- შექმენით `Phone` აბსტრაქტული კლასი აბსტრაქტული `makeCall(String number)` და არააბსრაქტული `testCall(String number)` მეთოდებით.
-- `Phone` კლასი უნდა აკეთებდეს `Electronic` ინტერფეისის იმპლემენტაციას.
-- შექმენით `Phone` კლასის მემკვიდრე `Mobile` კლასი და აღწერეთ მხოლოდ ერთი, ნებისმიერი მეთოდი.
-- გადააკეთეთ `Electronic` ინტერფეისი აბსტრაქტულ კლასად.
+- შექმენით `interfaces.Device` ინტერფეისი `on` და `off` მეთოდებით.
+- შექმენით `interfaces.Device` ინტერფეისის მემკვიდრე `interfaces.Electronic` ინტერფეისი `plugin` მეთოდით.
+- შექმენით `interfaces.Phone` აბსტრაქტული კლასი აბსტრაქტული `makeCall(String number)` და არააბსრაქტული `testCall(String number)` მეთოდებით.
+- `interfaces.Phone` კლასი უნდა აკეთებდეს `interfaces.Electronic` ინტერფეისის იმპლემენტაციას.
+- შექმენით `interfaces.Phone` კლასის მემკვიდრე `interfaces.Mobile` კლასი და აღწერეთ მხოლოდ ერთი, ნებისმიერი მეთოდი.
+- გადააკეთეთ `interfaces.Electronic` ინტერფეისი აბსტრაქტულ კლასად.
 
 ## 2. მემკვიდრეობითობა
 
