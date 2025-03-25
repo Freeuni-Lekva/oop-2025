@@ -1,5 +1,7 @@
 public class BooleanFilter implements Filter {
 
+    // rep invariant: if (idexes[i] == 1) i is present
+
     private boolean[] indexes;
 
     private int numPresent;

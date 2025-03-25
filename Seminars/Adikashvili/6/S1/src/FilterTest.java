@@ -10,7 +10,7 @@ public class FilterTest {
 
     @BeforeEach
     public void setUp() {
-        filter = new BooleanFilter();
+        filter = new BitmaskFilter();
     }
 
     @Test

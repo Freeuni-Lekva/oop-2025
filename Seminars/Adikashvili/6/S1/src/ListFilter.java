@@ -4,6 +4,8 @@ import java.util.List;
 
 public class ListFilter implements Filter {
 
+    // rep invariant: indexes is sorted
+
     private final List<Integer> indexes;
 
     public ListFilter() {
