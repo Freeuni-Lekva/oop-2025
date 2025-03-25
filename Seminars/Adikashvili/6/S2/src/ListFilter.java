@@ -5,6 +5,7 @@ import java.util.List;
 public class ListFilter implements Filter {
 
     // rep invariant: indexes is sorted
+
     private List<Integer> indexes;
 
     public ListFilter() {

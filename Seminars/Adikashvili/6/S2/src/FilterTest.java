@@ -9,7 +9,7 @@ public class FilterTest {
 
     @BeforeEach
     public void setUp() {
-        filter = new BooleanFilter();
+        filter = new BitmaskFilter();
     }
 
     @Test
@@ -19,12 +19,8 @@ public class FilterTest {
 
     @Test
     public void testAddSize() {
-        filter.add(0);
-        filter.add(1);
-        filter.add(5);
-        filter.add(1000);
-        filter.add(1);
-        assertEquals(4, filter.size());
+        filter.add(31);
+        assertTrue(filter.isPresent(31));
     }
 
     @Test
