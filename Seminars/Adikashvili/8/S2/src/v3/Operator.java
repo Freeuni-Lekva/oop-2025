@@ -15,7 +15,7 @@ public abstract class Operator {
 
     @Override
     public String toString() {
-        return "(" + left.toString() + "?" + right.toString() + ")";
+        return "(" + left.toString() + getOperator() + right.toString() + ")";
     }
 
     abstract char getOperator();
