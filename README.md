@@ -10,11 +10,11 @@ https://classroom.google.com/u/1/c/NzU0NDkxMDgyNjky
 ## დავალებების მოსაწვევები
 | დავალება | ქულა | მოსაწვევი | ჩაბარების თარიღი |
 |----------|------|-----------|------------------|
-| 01 - CodeCamp | 6 | [link](https://classroom.github.com/a/Ol_3mCz8) |    30/03/2025    |
-| 02 - Tetris | 10 | [link](https://classroom.github.com/a/uCgpEJPf) |    13/04/2025    |
-| 03 - Sudoku | 10 | [link](https://classroom.github.com/a/wGHJNKRy) |    27/04/2025    |
-| 04 - Threads | 10 | [link](https://classroom.github.com/a/STWngdn7) |   11/05/2025   |
-| 05 - Web | 9 | [link](https://classroom.github.com/a/1Fk1k_OD) |  25/05/2025   |
+| 01 - CodeCamp | 6 | [link](https://classroom.github.com/a/Ol_3mCz8) |    02/04/2025    |
+| 02 - Tetris | 10 | [link](https://classroom.github.com/a/uCgpEJPf) |    16/04/2025    |
+| 03 - Sudoku | 10 | [link](https://classroom.github.com/a/wGHJNKRy) |    30/04/2025    |
+| 04 - Threads | 10 | [link](https://classroom.github.com/a/STWngdn7) |   14/05/2025   |
+| 05 - Web | 9 | [link](https://classroom.github.com/a/1Fk1k_OD) |  28/05/2025   |
 | Final | 35 | [link]() |       |
 
 
