@@ -5,9 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SwingView {
-    public static final int CALC_WIDTH = 300;
-    public static final int CALC_HEIGHT = 300;
+public class SwingView extends AbstractView {
+    public static final int CALC_WIDTH = 500;
+    public static final int CALC_HEIGHT = 400;
 
     private final JFrame frame;
     private final JTextField inputField;
@@ -60,7 +60,6 @@ public class SwingView {
         frame.add(inputPanel, BorderLayout.NORTH);
         frame.add(valueButtonPanel, BorderLayout.CENTER);
         frame.add(commandButtonPanel, BorderLayout.EAST);
-        frame.setVisible(true);
     }
 
     private GridLayout getGridLayout(int rows, int cols) {
@@ -74,11 +73,20 @@ public class SwingView {
         JButton button = new JButton(name);
         button.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                // TODO
+            public void actionPerformed(ActionEvent actionEvent) { // button click
+                fireInputChanged(actionEvent.getActionCommand());
             }
         });
         return button;
     }
 
+    @Override
+    public void show() {
+        frame.setVisible(true);
+    }
+
+    @Override
+    public void displayChanged(String display) {
+        this.inputField.setText(display);
+    }
 }
