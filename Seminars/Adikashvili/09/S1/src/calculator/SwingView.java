@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SwingView {
+public class SwingView extends AbstractView {
     public static final int CALC_WIDTH = 300;
     public static final int CALC_HEIGHT = 300;
 
@@ -74,10 +74,19 @@ public class SwingView {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                // TODO
+                fireInputChanged(actionEvent.getActionCommand());
             }
         });
         return button;
     }
 
+    @Override
+    public void displayChanged(String display) { // comes from brain
+        this.inputField.setText(display);
+    }
+
+    @Override
+    public void show() {
+        frame.setVisible(true);
+    }
 }
