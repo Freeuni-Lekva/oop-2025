@@ -1,5 +1,3 @@
-import com.sun.org.apache.xpath.internal.operations.And;
-
 import java.util.ArrayList;
 import java.util.List;
 
