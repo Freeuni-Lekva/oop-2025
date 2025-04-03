@@ -4,15 +4,14 @@ import table.Student;
 
 public class YearFilter implements Filter {
 
-    private int year;
+    private final int year;
 
     public YearFilter(int year) {
         this.year = year;
     }
 
-
     @Override
     public boolean filter(Student student) {
-        return false;
+        return this.year == student.getYear();
     }
 }

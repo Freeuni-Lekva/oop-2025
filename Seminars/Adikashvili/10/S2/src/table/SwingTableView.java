@@ -14,7 +14,7 @@ public class SwingTableView extends AbstractView {
 
     private final JFrame frame;
 
-    private StudentsTableModel tableModel;
+    private final StudentsTableModel tableModel;
 
     public SwingTableView() {
         frame = new JFrame();

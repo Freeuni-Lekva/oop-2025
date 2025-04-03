@@ -6,7 +6,7 @@ import filter.Filter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Store { // in-memory base
+public class Store { // in-memory database
 
     private DisplayListener displayListener;
 
@@ -36,11 +36,13 @@ public class Store { // in-memory base
     public void fireStudentsChanged(List<Student> newStudents) {
         List<Student> filteredStudents = new ArrayList<>();
 
-        for (Student student : students) {
+        for (Student student : newStudents) {
             if (filter.filter(student)) {
                 filteredStudents.add(student);
             }
         }
+
+        System.out.println(filteredStudents);
 
         this.displayListener.studentsChanged(filteredStudents);
     }
