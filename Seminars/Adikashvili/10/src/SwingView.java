@@ -1,10 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.List;
 
-public class SwingView {
+public class SwingView extends AbstractView {
 
     private final JFrame frame;
+
+    private final StudentsTableModel studentsTableModel;
 
     public SwingView() {
         frame = new JFrame();
@@ -22,7 +25,7 @@ public class SwingView {
                 String firstName = firstNameTF.getText();
                 String lastName = lastNameTF.getText();
                 String year = yearTF.getText();
-                // TODO
+                fireStudentAdded(new Student(firstName, lastName, Integer.parseInt(year)));
             }
         });
         JTextField firstNameFTF = new JTextField();
@@ -40,18 +43,47 @@ public class SwingView {
             @Override
             public void keyReleased(KeyEvent keyEvent) {
                 if (!firstNameFTF.getText().isEmpty()) {
-                    // TODO
+                    FirstNameFilter firstNameFilter = new FirstNameFilter(firstNameFTF.getText());
+                    fireFilterAdded(firstNameFilter);
                 }
             }
         });
         JTextField lastNameFTF = new JTextField();
+        lastNameFTF.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent keyEvent) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent keyEvent) {
+
+            }
+
+            @Override
+            public void keyReleased(KeyEvent keyEvent) {
+                if (!lastNameFTF.getText().isEmpty()) {
+                    LastNameFilter lastNameFilter = new LastNameFilter(lastNameFTF.getText());
+                    fireFilterAdded(lastNameFilter);
+                }
+            }
+        });
         JTextField yearFTF = new JTextField();
 
         JButton filter = new JButton("Filter");
         filter.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                // TODO
+                FirstNameFilter firstNameFilter = new FirstNameFilter(firstNameFTF.getText());
+                LastNameFilter lastNameFilter = new LastNameFilter(lastNameFTF.getText());
+                YearFilter yearFilter = new YearFilter(Integer.parseInt(yearFTF.getText()));
+
+                AndFilter andFilter = new AndFilter();
+                andFilter.addFilter(firstNameFilter);
+                andFilter.addFilter(lastNameFilter);
+                andFilter.addFilter(yearFilter);
+
+                fireFilterAdded(andFilter);
             }
         });
 
@@ -68,7 +100,8 @@ public class SwingView {
 
         // table---------------------------------------------
         JTable table = new JTable();
-        // TODO setModel
+        studentsTableModel = new StudentsTableModel();
+        table.setModel(studentsTableModel);
 
         JPanel tablePanel = new JPanel(new BorderLayout());
 
@@ -82,7 +115,13 @@ public class SwingView {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
+    @Override
     public void show() {
         frame.setVisible(true);
+    }
+
+    @Override
+    public void studentsChanged(List<Student> students) {
+        this.studentsTableModel.setStudents(students);
     }
 }
