@@ -34,4 +34,8 @@
     - courseType
     - students
 
-_ბაზასთან კავშირისთვის - jdbc:mysql://localhost:3306/students_db_
+_MySQL ბაზასთან კავშირისთვის - jdbc:mysql://localhost:3306/students_db_
+
+_MySQL Driver - com.mysql.cj.jdbc.Driver_
+
+_H2 ბაზა: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1_
