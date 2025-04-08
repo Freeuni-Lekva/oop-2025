@@ -1,5 +1,5 @@
 # ახალი ბაზის შექმნა
-CREATE DATABASE students_db;
+# CREATE DATABASE students_db;
 
 # მაიესქიუელისთვის იმის თქმა თუ რომელ ბაზას ვიყენებთ
 use students_db;
