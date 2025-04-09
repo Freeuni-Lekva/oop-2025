@@ -13,6 +13,8 @@
 - ვერსიის შემოწმება: mysql --version
 - IntelliJ-სთან ინტეგრაცია: https://www.jetbrains.com/help/idea/mysql.html
 
+------------------------
+
 ### ამოცანა
 1. შექმენით ბაზა, რომელშიც შევინახავთ ინფორმაციას კურსების და სტუდენების შესახებ.
 
@@ -21,18 +23,22 @@
 - Students:
 
     - id
-    - idNumber
-    - firstName
-    - lastName
-    - registrationDate
-    - courses
+    - student_id
+    - idnumber
+    - firstname
+    - lastname
+    - register_date
 
 - Courses:
     - id
-    - courseName
-    - courseCredit
-    - courseType
-    - students
+    - course_id
+    - course_name
+    - course_credit
+    - course_type
+
+3. დაწერეთ იუნით ტესტები H2 ბაზის გამოყენებით.
+
+------------------------
 
 _MySQL ბაზასთან კავშირისთვის - jdbc:mysql://localhost:3306/students_db_
 
