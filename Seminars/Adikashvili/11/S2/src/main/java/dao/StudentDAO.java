@@ -30,6 +30,17 @@ public class StudentDAO {
         return students;
     }
 
+    public Student getStudentById(int id) throws SQLException {
+        PreparedStatement statement = connection.prepareStatement("SELECT * FROM students WHERE student_id = ?");
+        statement.setInt(1, id);
+        ResultSet resultSet = statement.executeQuery();
+
+        if (resultSet.next()) {
+            return toStudent(resultSet);
+        }
+        return null;
+    }
+
     public List<Student> getAllStudentByName(String firstName) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM students WHERE firstname = ?");
         preparedStatement.setString(1, firstName);
