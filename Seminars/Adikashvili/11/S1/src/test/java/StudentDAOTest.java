@@ -103,11 +103,6 @@ public class StudentDAOTest {
     @Test
     public void testGetByIDNull() {
         Student student = studentDAO.getStudentById(100);
-
-        while (true) {
-
-        }
-
-//        assertNull(student);
+        assertNull(student);
     }
 }
