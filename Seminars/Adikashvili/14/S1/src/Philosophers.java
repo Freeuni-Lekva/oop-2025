@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Philosophers {
 
-    private static final int NUM_PHILOSOPHERS = 5;
+    private static final int NUM_PHILOSOPHERS = 100;
 
     // inner class
     private static class Philosopher extends Thread {
@@ -45,7 +45,7 @@ public class Philosophers {
                     forks[id].unlock();
                     forks[(id + 1) % NUM_PHILOSOPHERS].unlock();
 
-                    room.release();
+                    room.release(); // leaves room
                 }
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
@@ -55,7 +55,7 @@ public class Philosophers {
 
     public static void main(String[] args) {
         Philosopher[] philosophers = new Philosopher[NUM_PHILOSOPHERS];
-        Semaphore room = new Semaphore(5);
+        Semaphore room = new Semaphore(NUM_PHILOSOPHERS - 1);
         Lock[] forks = new ReentrantLock[NUM_PHILOSOPHERS];
         for (int i = 0; i < NUM_PHILOSOPHERS; i++) {
             forks[i] = new ReentrantLock();

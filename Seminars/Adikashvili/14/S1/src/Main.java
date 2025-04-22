@@ -5,7 +5,6 @@ import java.util.concurrent.Semaphore;
 public class Main {
 
     public static void main(String[] args) {
-
         Semaphore semaphore = new Semaphore(0);
         List<Character> buffer = new ArrayList<>();
         for (int i = 0; i < 10; i++) buffer.add(null);

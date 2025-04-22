@@ -64,7 +64,7 @@ public class BlockingQueueImpl<T> implements BlockingQueue<T> {
                 return null;
             }
 
-            T elem = elements.removeFirst();
+            T elem = elements.remove(0);
             enqueueCondition.signal();
             return elem;
         } catch (InterruptedException e) {
