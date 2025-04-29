@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students form</title>
+    <link rel="stylesheet" href="styles/index.css"/>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+<form id="students-form">
+    <label for="first-name">
+        <input type="text" placeholder="enter first name" id="first-name"/>
+    </label>
+    <label for="last-name">
+        <input type="text" placeholder="enter last name" id="last-name"/>
+    </label>
+    <button type="button" onclick="addStudent()" id="submit-button"> Submit</button>
+</form>
+
+<table id="students-table">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+</table>
+</body>
+
+</html>

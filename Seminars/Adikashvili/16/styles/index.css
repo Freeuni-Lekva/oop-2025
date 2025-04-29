@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#students-form {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+button {
+    width: 100px;
+    background: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+#students-table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px dotted black;
+}
+
+#students-table tr, #students-table th, #students-table td {
+    padding: 10px;
+}
