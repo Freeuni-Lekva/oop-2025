@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <listener>
+        <listener-class>ge.edu.freeuni.ContextListener</listener-class>
+    </listener>
+
+    <!--  servlets -->
+    <servlet>
+        <servlet-name>hello-servlet</servlet-name>
+        <servlet-class>ge.edu.freeuni.HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>student</servlet-name>
+        <servlet-class>ge.edu.freeuni.StudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hello-servlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>student</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+</web-app>
