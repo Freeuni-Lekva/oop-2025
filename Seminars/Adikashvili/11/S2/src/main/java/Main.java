@@ -9,10 +9,10 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         try (BasicDataSource basicDataSource = new BasicDataSource()) { // try-with-resources
-            basicDataSource.setUrl(URL);
-            basicDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-            basicDataSource.setUsername("root");
-            basicDataSource.setPassword("root");
+                basicDataSource.setUrl(URL);
+                basicDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+                basicDataSource.setUsername("root");
+                basicDataSource.setPassword("root");
 
             StudentDAO dao = new StudentDAO(basicDataSource.getConnection());
             System.out.println(dao.getAllStudents());
