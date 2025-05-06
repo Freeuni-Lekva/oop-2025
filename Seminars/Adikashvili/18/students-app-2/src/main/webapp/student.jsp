@@ -6,18 +6,27 @@
 <%@ page import="java.util.List" %>
 <%@ page import="filter.Filter" %>
 <%@ page import="filter.FilterBuilder" %>
+<%@ page import="static com.example.Constants.COOKIE_USER_NAME" %>
 
 <html>
 <head>
     <title>Students App</title>
+    <link rel="stylesheet" href="student.css" />
 </head>
 <body>
 
+<% String name = (String) request.getAttribute(COOKIE_USER_NAME);
+    if (name == null) {
+%>
 <form id="students-form" action="/student" method="post">
     <input type="text" placeholder="enter first name" name="first-name"/>
     <input type="text" placeholder="enter last name" name="last-name"/>
     <input type="submit" value="Add student"/>
 </form>
+<% } else { %>
+<div>Hello <%= name %>
+</div>
+<% } %>
 
 <form action="/student" method="get">
     <input type="text" placeholder="enter first name" name="first-name"/>
