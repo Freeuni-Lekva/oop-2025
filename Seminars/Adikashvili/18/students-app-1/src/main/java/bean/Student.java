@@ -1,4 +1,4 @@
-package ge.edu.freeuni;
+package bean;
 
 public class Student {
 

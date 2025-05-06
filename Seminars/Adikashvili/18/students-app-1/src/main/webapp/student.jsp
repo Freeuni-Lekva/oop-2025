@@ -2,8 +2,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@ page import="ge.edu.freeuni.StudentDao" %>
-<%@ page import="ge.edu.freeuni.Student" %>
+<%@ page import="bean.Student" %>
 <%@ page import="java.util.List" %>
+<%@ page import="filter.Filter" %>
 
 <html>
 <head>
@@ -45,7 +46,8 @@
         <th>Last Name</th>
     </tr>
     <% StudentDao dao = (StudentDao) application.getAttribute("store");
-        List<Student> students = dao.getAllStudents();
+        Filter filter = (Filter)request.getAttribute("filter");
+        List<Student> students = dao.filterStudents(filter);
 
         for (Student student : students) {
     %>

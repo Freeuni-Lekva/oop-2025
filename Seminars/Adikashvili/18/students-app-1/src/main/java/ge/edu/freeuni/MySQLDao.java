@@ -1,8 +1,10 @@
 package ge.edu.freeuni;
 
+import bean.Student;
+import filter.AllFilter;
+import filter.Filter;
 import org.apache.commons.dbcp2.BasicDataSource;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,17 +37,19 @@ public class MySQLDao implements StudentDao {
 
     @Override
     public List<Student> getAllStudents() {
+        return filterStudents(new AllFilter());
+    }
+
+    public List<Student> filterStudents(Filter filter) {
         try (Connection connection = basicDataSource.getConnection()) {
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM students");
+            ResultSet resultSet = statement.executeQuery("SELECT first_name, last_name from students WHERE " + filter.toString());
 
             List<Student> result = new ArrayList<>();
 
             while (resultSet.next()) {
                 result.add(new Student(resultSet.getString("first_name"), resultSet.getString("last_name")));
             }
-
-            System.out.println(result);
 
             return result;
         } catch (SQLException e) {

@@ -1,5 +1,10 @@
 package ge.edu.freeuni;
 
+import bean.Student;
+import filter.AllFilter;
+import filter.Filter;
+import filter.FilterBuilder;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -22,6 +27,9 @@ public class StudentServlet extends HttpServlet {
                 }
             }
         }
+
+        Filter filter = FilterBuilder.build(request); // get filter from request
+        request.setAttribute("filter", filter);
 
         request.getRequestDispatcher("student.jsp").forward(request, response);
     }
