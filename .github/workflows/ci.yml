@@ -1,3 +1,17 @@
 on:
   pull_request:
+
 jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+
+      - name: Build Java
+        run: |
+          cd Seminars/Adikashvili/11
+          mvn clean install -DskipTests
