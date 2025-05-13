@@ -10,7 +10,7 @@ import java.util.List;
 import static util.Converter.toCourse;
 import static util.Converter.toStudent;
 
-public class StudentDAO {
+publicc class StudentDAO {
 
     private final Connection connection;
 
