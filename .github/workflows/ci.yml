@@ -1,3 +1,3 @@
 on:
-  push:
+  push1:
 jobs:
