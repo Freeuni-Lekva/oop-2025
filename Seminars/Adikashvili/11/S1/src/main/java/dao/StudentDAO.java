@@ -21,7 +21,7 @@ public class StudentDAO {
     public List<Student> getAllStudents() {
         try {
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM STUDENTS");
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM STUDENTS WHERE false");
 
             List<Student> students = new ArrayList<>();
 
