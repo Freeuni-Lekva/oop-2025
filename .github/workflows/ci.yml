@@ -1,6 +1,5 @@
 on:
   pull_request:
-
 jobs:
   build:
     steps:
