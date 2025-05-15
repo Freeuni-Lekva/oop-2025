@@ -1,6 +1,6 @@
 ## Streams
 
-გვაქვს Employees კლასი.
+გვაქვს Employee კლასი.
 EmployeeCatalog კლასში შეინახეთ თანაშრომლების სია და დაწერეთ 3 ფუნქციის იმპლემენტაცია map, reduce და filter ფუნქციების გამოყენებით:
 * public Employee findEmployeeWithHighestSalary();
     * იპოვეთ ყველაზე მაღალანაზღაურებადი თანამშრომელი
