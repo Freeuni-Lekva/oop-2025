@@ -1,0 +1,10 @@
+#animals {
+    padding: 10px;
+    border: 1px solid red;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+}
