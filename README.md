@@ -15,7 +15,7 @@ https://classroom.google.com/u/1/c/NzU0NDkxMDgyNjky
 | 03 - Sudoku | 10 | [link](https://classroom.github.com/a/wGHJNKRy) | 04/05/2025       |
 | 04 - Threads | 10 | [link](https://classroom.github.com/a/STWngdn7) | 18/05/2025       |
 | 05 - Web | 9 | [link](https://classroom.github.com/a/1Fk1k_OD) | 01/06/2025       |
-| Final | 35 | [link]() |                  |
+| Final | 35 | [link](https://classroom.github.com/a/DNph1jNe) | 01/07/2025       |
 
 
 ## Git basics
