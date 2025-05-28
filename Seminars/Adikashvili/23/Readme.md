@@ -9,3 +9,5 @@ api - https://learnwebcode.github.io/json-example/animals-1.json
 ----
 
 JQuery - https://www.w3schools.com/jquery/default.asp
+
+How JavaScript works(visualized) - https://www.youtube.com/watch?v=eiC58R16hb8&t=630s
