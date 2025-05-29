@@ -11,13 +11,13 @@
   * reflection
 * გატესტეთ API სხვადასხვა GET/POST რიქუესთებით.
 
-  -------
+-------
 
-  application.properties
-  ```
-  spring.datasource.url=jdbc:mysql://localhost:3306/grading_db
-  spring.datasource.username=root
-  spring.datasource.password=root
-  spring.jpa.hibernate.ddl-auto=update
+application.properties
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/grading_db
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
 
-  ```
+```
