@@ -15,5 +15,5 @@
 
 რეაქტის პროექტის გენერირება
 ```shell
-npx create-react-app my-app --template typescript
+npx create-react-app frontend --template typescript
 ```
