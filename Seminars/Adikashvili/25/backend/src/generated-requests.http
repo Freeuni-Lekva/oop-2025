@@ -1,0 +1,14 @@
+###
+GET http://localhost:8080/grade/grades/gadik19@freeuni.edu.ge
+
+
+###
+POST http://localhost:8080/grade/add/g.adikashvili@freeuni.edu.ge
+Content-Type: application/json
+
+{
+  "criterion": "CODE_REVIEW",
+  "score": 5,
+  "comment": "good",
+  "studentMail": "gadik19@freeuni.edu.ge"
+}
