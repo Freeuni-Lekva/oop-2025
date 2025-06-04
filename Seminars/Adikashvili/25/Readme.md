@@ -21,6 +21,10 @@ npx create-react-app frontend --template typescript
 2. გუგლის ავტორიზაციისთვის
 ```shell
 npm install @react-oauth/google@latest jwt-decode
+
+jwtDecode(credentials.credential)
+GoogleLogin
+googleLogout
 ```
 
 3.  ბუთსთრაპი
