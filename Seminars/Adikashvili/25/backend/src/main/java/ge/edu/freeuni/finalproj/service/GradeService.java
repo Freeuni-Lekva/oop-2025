@@ -16,6 +16,10 @@ public class GradeService {
     @Autowired
     private GradeRepository repository;
 
+    public List<String> getStudentMails() {
+        return repository.findAll().stream().map(Grade::getStudentMail).toList();
+    }
+
     public List<GradeDTO> getStudentGrades(String email) {
         return repository.findAllByStudentMail(email).stream().map(Helper::toGradeDTO).toList();
     }

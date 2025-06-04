@@ -9,12 +9,18 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/grade")
 public class GradeController {
 
     @Autowired
     private GradeService service;
+
+    @GetMapping("/mails")
+    public List<String> getStudentMails() {
+        return service.getStudentMails();
+    }
 
     @GetMapping("/grades/{email}")
     public List<GradeDTO> getGrades(@PathVariable String email) {
