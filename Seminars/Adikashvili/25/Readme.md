@@ -33,3 +33,23 @@ npm install bootstrap react-bootstrap
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
+
+----------
+
+ტექნოლოგიური სტეკი
+
+ფრონტი:
+* React
+* Typescript
+* Tailwind CSS
+* AJAX (fetch)
+* React bootstrap / CSS bootstrap
+
+ბექენდი:
+* Spring
+* Java
+* MySQL
+* Lombok
+* Hibernate
+* REST (requests)
+* Maven
