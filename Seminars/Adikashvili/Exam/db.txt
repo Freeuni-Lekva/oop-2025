@@ -1,0 +1,50 @@
+1. user:
+    id - int, primary key
+    username - varchar
+    password - varchar
+    role - ENUM('customer', 'seller', 'admin')
+    active - boolean
+
+2. category:
+    id - int, primary key
+    name - varchar
+
+3. product:
+    id - int, primary key
+    name - varchar(50)
+    price - double
+    quantity - int
+    description - text
+    category_id - int, foreign key references category(id)
+    user_id - int, foreign key references user(id)
+    blocked - boolean
+
+4. category_product:
+    id - int, primary key
+    product_id - int, foreign key references product(id)
+    category_id - int, foreign key references category(id)
+
+5. review:
+    id - int, primary key
+    product_id - int, foreign key references product(id)
+    user_id - int, foreign key references user(id)
+    rating - int
+    comment - text
+    date - datetime
+
+6. order:
+    id - int, primary key
+    user_id - int, foreign key references user(id)
+
+7. order_item:
+    id - int, primary key
+    order_id - int, foreign key references order(id)
+
+// dao classes
+
+interface UserDao {
+    User findUserById(int id);
+    void save(User user);
+}
+
+...
