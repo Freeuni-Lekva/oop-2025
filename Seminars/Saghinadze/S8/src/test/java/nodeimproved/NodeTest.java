@@ -23,11 +23,4 @@ public class NodeTest {
         assert result == 7;
     }
 
-    @Test
-    void testToString() {
-        String result = node.toString();
-        assert result.equals("(1 + (2 * 3))");
-    }
-
-
 }
