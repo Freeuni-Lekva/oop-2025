@@ -1,14 +1,14 @@
 - კოდის კომპილაცია
 ```shell
-javac Streams.java
+javac Main.java
 ```
 - კოდის გაშვება
 ```shell
-java Streams
+java Main
 ```
 - jar არქივის შექმნა
 ```shell
-jar cvfe main.jar Streams *.class
+jar cvfe main.jar Main *.class
 ```
 
 - შექმნილი jar არქივის გაშვება
